@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Total Sales</label>
+    <protected>false</protected>
+    <values>
+        <field>metricId__c</field>
+        <value xsi:type="xsd:string">55b9121e-6243-49e2-8a7c-808029321f1f</value>
+    </values>
+    <values>
+        <field>metricName__c</field>
+        <value xsi:type="xsd:string">Total Sales</value>
+    </values>
+</CustomMetadata>
