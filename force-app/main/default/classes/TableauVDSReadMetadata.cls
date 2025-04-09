@@ -1,16 +1,17 @@
 public with sharing class TableauVDSReadMetadata {
    
-    @InvocableMethod(label='Read VDS Metadata' description='Fetches metadata from the VDS')
+    @InvocableMethod(label='TableauVDSReadMetadata' description='Fetches metadata from the VDS')
     public static List<OutputResponse> readMetadata(List<Request> requests) {
         Request myRequest = requests[0];
         String VDSQuery = myRequest.User_Query;
-        System.debug('Read VDS Metadata - User query: ' + VDSQuery);
+        System.debug('VDS Read Metadata - User query: ' + VDSQuery);
 
         // Create a request object for querying VDS datasource
         Map<String, Object> readMetadataRequest = new Map<String, Object>();
         Map<String, Object> connectionBody = new Map<String, Object>();
         
-        String datasourceLuid = '30c08e5a-49c6-4f4a-a71f-75b3dfff11d8';
+        // String datasourceLuid = '30c08e5a-49c6-4f4a-a71f-75b3dfff11d8';
+        String datasourceLuid = 'ca44d18c-b33b-41c3-81f0-a8f291194300';
         
         connectionBody.put('datasourceLuid', datasourceLuid);
         readMetadataRequest.put('datasource', connectionBody);
@@ -24,9 +25,9 @@ public with sharing class TableauVDSReadMetadata {
         try {
        
 
-            // Testing the rest api auth code
+            // Authenticate to REST API
             String x_tableau_auth = TableauAuthHandler.authenticate('eacloudstage8');
-            System.debug('token: ' + x_tableau_auth);
+            System.debug('token @ TableauVDSReadMetadata: ' + x_tableau_auth);
 
         
             // Configure HTTP request

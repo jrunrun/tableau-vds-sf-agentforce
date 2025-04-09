@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>eacloudstage8</label>
+    <protected>false</protected>
+    <values>
+        <field>SiteName__c</field>
+        <value xsi:type="xsd:string">eacloudstage8</value>
+    </values>
+    <values>
+        <field>TableauCloud__c</field>
+        <value xsi:type="xsd:string">https://stage-dataplane8.tableau.sfdc-shbmgi.svc.sfdcfc.net</value>
+    </values>
+    <values>
+        <field>clientId__c</field>
+        <value xsi:type="xsd:string">c78abdd4-566b-4206-b112-feec08362b3e</value>
+    </values>
+    <values>
+        <field>kid__c</field>
+        <value xsi:type="xsd:string">40ffcbad-bae9-4b00-9f34-f83c018999f0</value>
+    </values>
+    <values>
+        <field>secret__c</field>
+        <value xsi:type="xsd:string">AhP+ZgGiHVyHmzf4D1Sh+HvNaCWjjxaX4IPxQxHGe7Q=</value>
+    </values>
+</CustomMetadata>
