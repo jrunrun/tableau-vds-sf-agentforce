@@ -10,7 +10,7 @@ public with sharing class TableauVDSReadMetadata {
         Map<String, Object> readMetadataRequest = new Map<String, Object>();
         Map<String, Object> connectionBody = new Map<String, Object>();
         
-        // String datasourceLuid = '30c08e5a-49c6-4f4a-a71f-75b3dfff11d8';
+        // E-bikes datasource info: https://stage-dataplane8.tableau.sfdc-shbmgi.svc.sfdcfc.net/#/site/eacloudstage8/datasources/179496/connections
         String datasourceLuid = 'ca44d18c-b33b-41c3-81f0-a8f291194300';
         
         connectionBody.put('datasourceLuid', datasourceLuid);
