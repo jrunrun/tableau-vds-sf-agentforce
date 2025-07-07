@@ -18,13 +18,18 @@ public with sharing class TableauVDSQueryDatasource {
         Map<String, Object> connectionBody = new Map<String, Object>();
 
         // E-bikes datasource info: https://stage-dataplane8.tableau.sfdc-shbmgi.svc.sfdcfc.net/#/site/eacloudstage8/datasources/179496/connections
-        String datasourceLuid = 'ca44d18c-b33b-41c3-81f0-a8f291194300';
+        // String datasourceLuid = 'ca44d18c-b33b-41c3-81f0-a8f291194300';
+
+          // Using the VDS API endpoint for the RCGSEPulse site
+        // a30bb0b0-cac9-4268-9f42-3142bd09529b
+        // https://10ax.online.tableau.com/#/site/rcgsepulse/datasources/8266875/connections
+        String datasourceLuid = 'a30bb0b0-cac9-4268-9f42-3142bd09529b';
 
 
         
         
         // Authenticate to REST API
-        String x_tableau_auth = TableauAuthHandler.authenticate('eacloudstage8');
+        String x_tableau_auth = TableauAuthHandler.authenticate('rcgsepulse');
         System.debug('token @ TableauVDSQueryDatasource: ' + x_tableau_auth);
 
         connectionBody.put('datasourceLuid', datasourceLuid);
@@ -45,7 +50,7 @@ public with sharing class TableauVDSQueryDatasource {
             
 
             // Configure HTTP request
-            httpRequest.setEndpoint('https://stage-dataplane8.tableau.sfdc-shbmgi.svc.sfdcfc.net/api/v1/vizql-data-service/query-datasource');
+            httpRequest.setEndpoint('https://10ax.online.tableau.com/api/v1/vizql-data-service/query-datasource');
             httpRequest.setMethod('POST');
             httpRequest.setHeader('Content-Type', 'application/json');
             httpRequest.setHeader('X-Tableau-Auth', x_tableau_auth );

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Tableau_Generate_SVG</developerName>
+    <masterLabel>Tableau Generate SVG</masterLabel>
+    <templateVersions>
+        <content>given this example svg: &lt;svg width=&quot;300&quot; height=&quot;140&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot;&gt; &lt;text x=&quot;10&quot; y=&quot;25&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;Entertainment&lt;/text&gt; &lt;rect x=&quot;120&quot; y=&quot;10&quot; width=&quot;90&quot; height=&quot;20&quot; fill=&quot;#63b075&quot;/&gt; &lt;text x=&quot;220&quot; y=&quot;25&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;$621.78&lt;/text&gt; &lt;text x=&quot;10&quot; y=&quot;55&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;Groceries&lt;/text&gt; &lt;rect x=&quot;120&quot; y=&quot;40&quot; width=&quot;37&quot; height=&quot;20&quot; fill=&quot;#73b883&quot;/&gt; &lt;text x=&quot;167&quot; y=&quot;55&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;$253.75&lt;/text&gt; &lt;text x=&quot;10&quot; y=&quot;85&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;Dining Out&lt;/text&gt; &lt;rect x=&quot;120&quot; y=&quot;70&quot; width=&quot;33&quot; height=&quot;20&quot; fill=&quot;#82c091&quot;/&gt; &lt;text x=&quot;163&quot; y=&quot;85&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;$227.68&lt;/text&gt; &lt;text x=&quot;10&quot; y=&quot;115&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;Utilities&lt;/text&gt; &lt;rect x=&quot;120&quot; y=&quot;100&quot; width=&quot;19&quot; height=&quot;20&quot; fill=&quot;#92c89e&quot;/&gt; &lt;text x=&quot;149&quot; y=&quot;115&quot; font-size=&quot;12&quot; fill=&quot;#333&quot;&gt;$128.37&lt;/text&gt; &lt;/svg&gt; 
+
+Create another svg for the following:{!$Input:VDS_Answer}.
+</content>
+        <inputs>
+            <apiName>VDS_Answer</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>VDS Answer</masterLabel>
+            <referenceName>Input:VDS_Answer</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>9vM4kARA/dVBp9lU652os39QuKCF9SJIH4kC0V6ulcM=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
